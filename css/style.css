@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 93.75%;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  font-size: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(45deg, #b63010, #d98324);
+}
+
+nav ul {
+  padding-left: 0;
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 15px;
+  margin: 0;
+  font-size: 19px;
+}
+nav ul li a {
+  padding: 5px;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin-right: 0px;
+  transition: background-color 0.5s;
+  border-radius: 12px;
+  /* border: 2px solid red; */
+}
+nav ul li a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.icon {
+  display: none;
+}
+
+#hero {
+  text-align: center;
+  height: 100vh;
+  padding: 1px;
+  border-bottom: 1px solid white;
+  background: linear-gradient(45deg, #a40606, #d98324);
+}
+
+#hero h1 {
+  position: relative;
+  top: 290px;
+}
+
+#greetings {
+  font-family: arial;
+  margin-bottom: 0;
+  color: rgb(41, 41, 41);
+}
+
+#name {
+  font-size: 3rem;
+  font-family: "Brush Script MT", cursive;
+  margin-top: 0;
+  color: #000000;
+}
+
+#aboutme {
+  margin: 0px;
+  padding: 50px;
+  /* font-size: 1.6rem; */
+  text-align: center;
+  /* background-image: url(../img/bg1.png); */
+  background: linear-gradient(130deg, #a40606, #d98324);
+  background-repeat: repeat-x;
+  color: rgb(41, 41, 41);
+  height: 100vh;
+  border-bottom: 1px solid white;
+}
+#aboutme > h1 {
+  font-size: 2.5rem;
+  /* color:red; */
+}
+#aboutme > P {
+  width: 50%;
+  margin: 90px auto;
+  font-size: 1.2rem;
+}
+#mywork {
+  margin: 0;
+  padding: 50px;
+  /* background-image: url(../img/bg2.jpg); */
+  background: linear-gradient(45deg, #a40606, #d98324);
+  background-repeat: repeat-x;
+  height: 100vh;
+  font-size: 1.5rem;
+  color: rgb(41, 41, 41);
+  border-bottom: 1px solid white;
+}
+#mywork h1 {
+  /* color: rgb(0, 0, 0); */
+  text-align: center;
+  font-size: 2.5rem;
+}
+#mywork p {
+  position: relative;
+  top: 20vh;
+  text-align: center;
+  font-size: 1.2rem;
+  /* color: rgb(0, 0, 0); */
+}
+#reachme {
+  margin: 0px;
+  padding: 1px;
+  font-size: 2rem;
+  text-align: center;
+  /* background-image: url(../img/bg1.png); */
+  background: linear-gradient(130deg, #a40606, #d98324);
+
+  background-repeat: repeat-x;
+  color: rgb(41, 41, 41);
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#reachme > h1 {
+  font-size: 2.5rem;
+  height: 20vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 1.2rem;
+  /* width:80%; */
+  height: 80vh;
+}
+#reachme #links a {
+  color: rgb(41, 41, 41);
+  text-decoration: none;
+  margin: 20px;
+  padding: 0;
+  transition: font-size 1s;
+}
+#reachme #links a > i {
+  display: block;
+}
+#reachme a:hover {
+  font-size: 1.7rem;
+  color: rgb(174, 174, 174);
+}
+#reachme span {
+  padding-left: 10px;
+}
+
+footer {
+  background-color: rgb(194, 204, 255);
+  height: 50px;
+  text-align: center;
+  padding: 1px;
+}
+footer p {
+  margin-top: 13px;
+  color: black;
+}
+
+@media only screen and (min-height: 900px) and (max-height: 950px) {
+  #hero h1 {
+    top: 305px;
+  }
+  #mywork {
+    height: 90vh;
+  }
+}
+
+@media only screen and (min-height: 951px) and (max-height: 1080px) {
+  #hero h1 {
+    top: 400px;
+  }
+  #mywork {
+    height: 92vh;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 12px;
+  }
+  header {
+    border: none;
+  }
+  nav ul li {
+    /* display: none; */
+    font-size: 1rem;
+    text-align: center;
+    padding: 6px;
+  }
+
+  #hero h1 {
+    top: 277px;
+    font-size: 1.5rem;
+  }
+  #aboutme {
+    font-size: 1rem;
+  }
+  #aboutme p {
+    margin-top: 100px;
+  }
+  #mywork {
+    font-size: 1rem;
+  }
+  #mywork p {
+    top: 33vh;
+  }
+  #reachme {
+    text-align: center;
+  }
+  #links {
+    margin: 160px auto;
+    padding: 0;
+    width: 40%;
+  }
+  #reachme {
+    font-size: 1rem;
+  }
+  #links a {
+    display: block;
+    text-align: left;
+
+    margin: 32px auto;
+    font-size: 1.5rem;
+  }
+}
