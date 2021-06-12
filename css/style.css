@@ -148,3 +148,15 @@ footer {
   text-align: center;
   padding: 1px;
 }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+  #links {
+    padding: 35px;
+    align-items: center;
+    flex-direction: column;
+    height: 89.5vh;
+  }
+}
